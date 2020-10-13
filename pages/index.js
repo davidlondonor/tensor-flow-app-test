@@ -1,25 +1,40 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Document, { Html } from "next/document";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Tensor Flow Test</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
+        ></link>
       </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Tensor Flow <a href="https://www.tensorflow.org/">React Test!</a>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          More information
+          <code className={styles.code}>https://www.tensorflow.org/</code>
         </p>
+        <i class="devicon-github-plain">
+          {" "}
+          <a href="https://www.tensorflow.org/"> Repositorio </a>
+        </i>
+        <h6>Built by David Londoño and Alejandro Montoya</h6>
+        <div>Teachable Machine Image Model Prueba</div>
+        <button type="button" onclick="init()">
+          Start
+        </button>
+        <div id="webcam-container"></div>
+        <div id="label-container"></div>
 
-        <div className={styles.grid}>
+        {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -47,7 +62,7 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
 
       <footer className={styles.footer}>
@@ -56,10 +71,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
-  )
+  );
 }
